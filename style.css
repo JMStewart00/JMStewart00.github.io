@@ -7,10 +7,16 @@ div.container {
 header, footer {
     padding: 1em;
     color: white;
-    background-color: midnightblue;
+    background-color: sienna;
     clear: left;
     text-align: center;
 }
+
+header{
+   background-color: #000000;
+   background: url(https://farm6.staticflickr.com/5291/5492734526_b822b9ac84_o.jpg) no-repeat center bottom;
+   background-size: cover;
+} 
 
 nav {
     float: left;
