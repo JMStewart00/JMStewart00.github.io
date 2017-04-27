@@ -5,7 +5,7 @@ div.container {
 }
 
 body {
-    background-color: oldlace;
+    background-color: #f1f1f1;
 }
 
 header, footer {
@@ -26,6 +26,7 @@ nav {
     float: left;
     max-width: 200px;
     margin: 0;
+    background-color: #f1f1f1;
 }
 
 nav ul {
