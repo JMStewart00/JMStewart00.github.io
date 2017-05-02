@@ -30,8 +30,9 @@ ul {
 }
 
 li {
-    float: left;
+    float: center;
     display: inline-block;
+    font-family: arial uppercase;
 }
 
 li a {
@@ -60,12 +61,3 @@ nav li a:hover {
 .img-circle {
   border-radius: 10px;
 }
-
-.navigation {
-  box-sizing: border-box;
-  overflow: auto;
-  padding: 18px 50px;
-  position: relative;
-  top: 0;
-  width: 100%;
-  z-index: 999;
