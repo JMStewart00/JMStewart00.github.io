@@ -1,17 +1,15 @@
 div.container {
     width: 100%;
-    border: 1px darkgrey;
-    font-family: arial;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: #efefef;
 }
 
 header, footer {
     padding: 1em;
     color: white;
-    background-color: sienna;
     clear: left;
     text-align: center;
 }
@@ -20,13 +18,14 @@ header{
    background-color: #000000;
    background: url(https://farm6.staticflickr.com/5291/5492734526_b822b9ac84_o.jpg) no-repeat center bottom;
    background-size: cover;
+   color: white;
 } 
 
 nav {
     float: left;
     max-width: 200px;
     margin: 0;
-    background-color: #f1f1f1;
+    background-color: #FF3B3F;
 }
 
 nav ul {
@@ -34,7 +33,7 @@ nav ul {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color: #FF3B3F;
 }
 
 nav li a {
@@ -54,4 +53,10 @@ article {
     border-left: 1px solid gray;
     padding: .5em;
     overflow: hidden;
+}
+
+h1, h2, p {
+  font-family: 'Roboto', sans-serif;
+  color: #A9A9A9;
+  padding: 20px 250px;
 }
