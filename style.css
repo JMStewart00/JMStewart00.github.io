@@ -16,7 +16,7 @@ header{
    background: url(https://farm6.staticflickr.com/5291/5492734526_b822b9ac84_o.jpg) no-repeat center bottom;
    background-size: cover;
    background-width: 100%;
-   font-size: 2em;
+   font-size: 1em;
 } 
 
 nav {
@@ -29,20 +29,20 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px;
-    width: 200px;
-    background-color: #f1f1f1;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
 nav li a {
     display: block;
-    color: #000;
-    padding: 8px 16px;
+    color: white;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
 nav li a:hover {
-    background-color: #555;
+    background-color: #111;
     color: white;
 }
 
@@ -58,7 +58,7 @@ nav li a:hover {
 }
 
 .img-circle {
-  border-radius: 60px;
+  border-radius: 10px;
 }
 
 .navigation {
