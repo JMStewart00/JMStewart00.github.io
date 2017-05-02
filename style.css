@@ -13,10 +13,9 @@ header, footer {
 
 header{
    background-color: #000000;
-   background: url(https://farm6.staticflickr.com/5291/5492734526_b822b9ac84_o.jpg) no-repeat center;
+   background: url(https://farm6.staticflickr.com/5291/5492734526_b822b9ac84_o.jpg) no-repeat center bottom;
    background-size: cover;
-   margin-left:auto;
-   margin-right:auto;
+   background-width: 100%;
    font-size: 2em;
 } 
 
@@ -30,7 +29,7 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     width: 200px;
     background-color: #f1f1f1;
 }
@@ -59,7 +58,7 @@ nav li a:hover {
 }
 
 .img-circle {
-  border-radius: 50%;
+  border-radius: 60px;
 }
 
 .navigation {
