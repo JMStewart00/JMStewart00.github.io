@@ -19,14 +19,9 @@ header{
    font-size: 1em;
 } 
 
-nav {
-    float: left;
-    max-width: 200px;
-    margin: 0;
-    background-color: #f1f1f1;
-}
 
-nav ul {
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,7 +29,12 @@ nav ul {
     background-color: #333;
 }
 
-nav li a {
+li {
+    float: left;
+    display: inline-block;
+}
+
+li a {
     display: block;
     color: white;
     padding: 14px 16px;
