@@ -1,8 +1,4 @@
-div.container {
-    width: 100%;
-    border: 1px darkgrey;
-    font-family: arial;
-}
+
 
 body {
     background-color: #f1f1f1;
@@ -20,6 +16,9 @@ header{
    background-color: #000000;
    background: url(https://farm6.staticflickr.com/5291/5492734526_b822b9ac84_o.jpg) no-repeat center bottom;
    background-size: cover;
+   background-width: 100%;
+   font-size: 2em;
+}
 } 
 
 nav {
@@ -54,4 +53,8 @@ article {
     border-left: 1px solid gray;
     padding: .5em;
     overflow: hidden;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
