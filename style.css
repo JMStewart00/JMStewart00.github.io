@@ -7,18 +7,14 @@ body {
     background-color: #efefef;
 }
 
-header, footer {
-    padding: 1em;
-    color: white;
-    clear: left;
-    text-align: center;
-}
-
 header{
    background-color: #000000;
    background: url(https://farm6.staticflickr.com/5291/5492734526_b822b9ac84_o.jpg) no-repeat center bottom;
    background-size: cover;
    color: white;
+   width: 100%;
+   text-align: center;
+
 } 
 
 nav {
@@ -49,8 +45,8 @@ nav li a:hover {
 }
 
 article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
+    margin-left: 50px;
+    text-anchor: top;
     padding: .5em;
     overflow: hidden;
 }
@@ -59,4 +55,8 @@ h1, h2, p {
   font-family: 'Roboto', sans-serif;
   color: #A9A9A9;
   padding: 20px 250px;
+}
+
+h3 {
+    padding-left: 8px;
 }
