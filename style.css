@@ -19,9 +19,7 @@ header{
    font-size: 1em;
 } 
 
-
-
-ul {
+.menu_nav ul {
     display: inline-block;
     list-style-type: none;
     margin: 0;
@@ -30,22 +28,28 @@ ul {
     background-color: #333;
 }
 
-li {
+.menu_nav li {
     float: center;
     display: inline-block;
     font-family: arial uppercase;
 }
 
-li a {
+.menu_nav li a {
     display: block;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-nav li a:hover {
+.manu_nav li a:hover {
     background-color: #111;
     color: white;
+}
+
+.menu_nav {
+    text-transform: uppercase;
+    margin: 0 auto;
+
 }
 
 .article {
@@ -62,3 +66,5 @@ nav li a:hover {
 .img-circle {
   border-radius: 10px;
 }
+
+.menu-nav
