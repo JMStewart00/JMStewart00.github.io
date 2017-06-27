@@ -7,41 +7,52 @@
     padding: 0;
 }
 
-html {
-    background: url(repeatbg.jpg) no-repeat center center fixed; 
+#maincontent {
+    background-image: url(repeatbg.jpg); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#secondBG {
+    background-image: url(repeatbg.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
 }
 
 
 body {
     background-color: transparent;
-    padding-top: 60px;
-    color: white;
 }
 
-@media (max-width: 979px) {
-  body {
-    padding-top: 13%;
-  }
-}
 
 #title {
     position: relative;
     -webkit-animation: mymove 1s; 
     animation: mymove 1s;
     font-weight: lighter;
+    font-family: 'Alex Brush', cursive;
 }
 
 #title {-webkit-animation-timing-function: ease-out;}
 
 #title {animation-timing-function: ease-out;}
 
-hr {
+#topRuler {
     position: relative;
     -webkit-animation: hrmove 1s; 
     animation: hrmove 1s;
@@ -50,9 +61,9 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
 }
 
-hr {-webkit-animation-timing-function: ease-in;}
+#topRuler {-webkit-animation-timing-function: ease-in;}
 
-hr {animation-timing-function: ease-in;}
+#topRuler {animation-timing-function: ease-in;}
 
 
 /* Safari 4.0 - 8.0 */
@@ -94,9 +105,6 @@ hr {animation-timing-function: ease-in;}
   margin:0 auto;
 }
 
-h1 {
-    font-family: 'Alex Brush', cursive;
-}
 
 .hvr-icon-grow:hover {
     -webkit-transform: scale(1.1) rotate(5deg);
@@ -111,6 +119,36 @@ h1 {
     opacity: .25;
 }
 
-nav > * {
+nav > *, p {
     font-family: 'PT Sans', sans-serif;
 }
+
+#about, #projects {
+    background-color: white;
+    height: 500px;
+}
+
+#about {
+    text-align: left;
+}
+
+#aboutRuler {
+    height: 2px;
+    background-color: black;
+    position: relative;
+    -webkit-animation: hrmove 1s; 
+    animation: hrmove 1s;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0));
+    align-self: left;
+}
+
+#mugshot {
+    border: solid 3px #000;
+    -moz-box-shadow: 5px 5px 3px #999;
+    -webkit-box-shadow: 5px 5px 3px #999;
+    box-shadow: 5px 5px 3px #999;
+}
+
+
+
