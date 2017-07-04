@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+ @import url('https://fonts.googleapis.com/css?family=Alex+Brush');
+ @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:800');
+
+ html, body   {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: transparent;
+}
+
+
+
+#maincontent {
+    background-image: url(repeatbg.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#secondBG {
+    background-image: url(woodbg.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+
+
+
+#title {
+    position: relative;
+    -webkit-animation: mymove 1s; 
+    animation: mymove 1s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title {-webkit-animation-timing-function: ease-out;}
+
+#title {animation-timing-function: ease-out;}
+
+#arrowDown, #arrowDown > * {
+    color: white;
+}
+
+#arrowDown:hover {
+    text-decoration: none;
+    opacity: .75;
+
+}
+
+#arrowDown > i {
+    animation-delay: 2s;
+    color: #FF9933;
+}
+
+i {
+    color: black;
+}
+
+
+#topRuler {
+    position: relative;
+    -webkit-animation: hrmove 1s; 
+    animation: hrmove 1s;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+#topRuler {-webkit-animation-timing-function: ease-in;}
+
+#topRuler {animation-timing-function: ease-in;}
+
+
+@-webkit-keyframes mymove {
+    from {bottom: -100px;}
+    to {bottom: 0;}
+}
+
+@keyframes mymove {
+    from {bottom: -100px; opacity: 0;}
+    to {bottom: 0px; opacity: 1;}
+}
+
+@-webkit-keyframes hrmove {
+    from {width: 0;}
+
+}
+
+@keyframes hrmove {
+    from {width: 0; opacity: 0;}
+}
+
+#maincontent {
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 10%;
+}
+ 
+.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+ 
+ 
+
+.centering {
+  float:none;
+  margin:0 auto;
+}
+
+
+.hvr-icon-grow:hover {
+    -webkit-transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1) rotate(5deg);
+    transition: .5s;
+    transition-property: transform;
+    opacity: 1;
+}
+
+.hvr-icon-grow {
+    transition-duration: .5s;
+    opacity: .25;
+}
+
+#resume {
+    transition-duration: .5s;
+    opacity: .75;
+}
+
+#resume:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: .5s;
+    transition-property: transform;
+    opacity: 1;
+}
+
+nav > *, p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+#about, #projects {
+    background-color: white;
+}
+
+#about {
+    text-align: left;
+}
+
+#aboutRuler {
+    height: 2px;
+    background-color: black;
+    position: relative;
+    -webkit-animation: hrmove 1s; 
+    animation: hrmove 1s;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0));
+    align-self: left;
+}
+
+#mugshot {
+    border: solid 2px gray;
+    -moz-box-shadow: 5px 5px 3px #999;
+    -webkit-box-shadow: 5px 5px 3px #999;
+    box-shadow: 5px 5px 3px #999;
+    border-radius: 100%;
+}
+
+nav.fixed {
+  position:fixed;
+  top:0px;
+  right:0px;
+  left:0px;
+  z-index:1;
+
+}
+
+div.borderYtoX a:before, div.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FF9933;
+    transition: all 0.3s;
+}
+
+div.borderYtoX a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+div.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+.devicon-devicon-plain {
+    min-width: 10em;
+  max-width: 15em;
+}
+
+/* if you want to change the original color */
+.devicon-devicon-plain path {
+  fill: #4691f6;
+}
+
+
