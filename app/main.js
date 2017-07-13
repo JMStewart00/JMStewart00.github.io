@@ -18,19 +18,21 @@ $(document).ready(function(){
 });
 });
 
-$(document).ready(function() {
-        var aboveHeight = $('#maincontent').outerHeight();
-        $(window).scroll(function(){
-                if ($(window).scrollTop() > aboveHeight){
-                $('nav').addClass('fixed').css('top','0').next()
-                .css('padding-top','200px');
+// $(document).ready(function() {
+//         var aboveHeight = $('#maincontent').outerHeight();
+//         $(window).scroll(function(){
+//                 if ($(window).scrollTop() > (aboveHeight - 55)){
+//                 $('nav').addClass('fixed').css('top','0').next()
  
-                } else {
-                $('nav').removeClass('fixed').next()
-                .css('padding-top','0');
-                }
-        });
+//                 } else {
+//                 $('nav').removeClass('fixed').next()
+//                 .css('padding-top','0');
+//                 }
+//         });
 
-});
+// });
 
+  $(document).ready(function(){
+    $("nav").sticky({topSpacing:0});
+  });
 

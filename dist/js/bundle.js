@@ -19,15 +19,22 @@ $(document).ready(function () {
     });
 });
 
+// $(document).ready(function() {
+//         var aboveHeight = $('#maincontent').outerHeight();
+//         $(window).scroll(function(){
+//                 if ($(window).scrollTop() > (aboveHeight - 55)){
+//                 $('nav').addClass('fixed').css('top','0').next()
+
+//                 } else {
+//                 $('nav').removeClass('fixed').next()
+//                 .css('padding-top','0');
+//                 }
+//         });
+
+// });
+
 $(document).ready(function () {
-    var aboveHeight = $('#maincontent').outerHeight();
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > aboveHeight) {
-            $('nav').addClass('fixed').css('top', '0').next().css('padding-top', '200px');
-        } else {
-            $('nav').removeClass('fixed').next().css('padding-top', '0');
-        }
-    });
+    $("nav").sticky({ topSpacing: 0 });
 });
 
 },{}]},{},[1]);
