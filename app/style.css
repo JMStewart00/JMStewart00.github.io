@@ -134,8 +134,21 @@ i {
     animation-timing-function: ease-in;
 }
 
+.pull-bottom {
+    display: inline-block;
+    vertical-align: bottom;
+    float: none;
+}
 
+#accordionBtn {
+    background-color: transparent;
+    border-color: var(--red);
+    border-width: 1px;
+}
 
+#ui-id-1:focus {
+    outline: none;
+}
 
 /*--------------------------------------------------------------------------------------------------------
                                                 HEADER ANIMATION
@@ -299,7 +312,8 @@ a.borderYtoX:hover:before, a.borderYtoX:hover:after
 
     position:relative;
     display:block;
-    max-width:650px;
+    width:100%;
+    height: 300px;
     margin:0 auto
 }
 
@@ -457,4 +471,9 @@ padding-right:0;padding-left:0}
 .portfolio-modal .modal-backdrop{
     opacity:0;
     display:none}
+
+.col-lg-4 {
+    height:25%;
+    width: 33%;
+}
 
