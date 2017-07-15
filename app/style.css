@@ -25,11 +25,12 @@
                                                 GENERIC STYLINGS
 --------------------------------------------------------------------------------------------------------*/
 
- html, body > *{
+html,body
+{
     width: 100%;
-    height: 100%; 
-    margin: 0 0 10% 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 body {
@@ -314,7 +315,8 @@ a.borderYtoX:hover:before, a.borderYtoX:hover:after
     display:block;
     width:100%;
     height: 300px;
-    margin:0 auto
+    margin:0 auto;
+    background-color: #696969;
 }
 
 

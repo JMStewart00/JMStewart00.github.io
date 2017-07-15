@@ -3,6 +3,7 @@ sr.reveal('.aboutTitle', {duration: 2000}, 500);
 sr.reveal('.aboutRuler', {duration: 2000}, 500);
 sr.reveal('.introTitle', {duration: 2000}, 500);
 sr.reveal('.overview', {duration: 2000}, 500);
+sr.reveal('.portfolio-box', {duration: 2000}, 500);
 
 
 
@@ -23,13 +24,12 @@ $(document).ready(function(){
     $("nav").sticky({topSpacing:0});
   });
 
-  $("#accordion").accordion({ header: "div", collapsible: true, active: false });
+  $("#accordion").accordion({ collapsible: true, active: false });
   $(document).ready(function () {
     $('.accordion-toggle').on('click', function(event){
         // create accordion variables
         var accordion = $(this);
         var accordionContent = accordion.next('.accordion-content');
-
 
     });
 });
