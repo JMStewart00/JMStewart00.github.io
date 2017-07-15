@@ -1,3 +1,5 @@
+// Scroll Reveal instructions
+
 window.sr = ScrollReveal();
 sr.reveal('.aboutTitle', {duration: 2000}, 500);
 sr.reveal('.aboutRuler', {duration: 2000}, 500);
@@ -5,7 +7,7 @@ sr.reveal('.introTitle', {duration: 2000}, 500);
 sr.reveal('.overview', {duration: 2000}, 500);
 sr.reveal('.portfolio-box', {duration: 2000}, 500);
 
-
+// Smooth Scroll on href clicks
 
 $(document).ready(function(){
     $('a[href^="#"]').on('click', function(event) {
@@ -19,6 +21,7 @@ $(document).ready(function(){
 });
 });
 
+// Calling sticky.js and for the sticky navbar.
 
   $(document).ready(function(){
     $("nav").sticky({topSpacing:0});
@@ -33,3 +36,9 @@ $(document).ready(function(){
 
     });
 });
+
+// popover function
+
+$(function () {
+  $('[data-toggle="popover"]').popover( { trigger: 'hover' } )
+})

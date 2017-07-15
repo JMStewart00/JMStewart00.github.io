@@ -24,7 +24,7 @@ const autoprefixerOptions = {
 
 gulp.task('connect', () => {
   connect.server({
-    root: './app',
+    root: '/',
       livereload: true
   });
 
@@ -41,13 +41,13 @@ gulp.task('js', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(['./app/*.html'], ['html']);
+  gulp.watch(['./*.html'], ['html']);
   gulp.watch(['./dist/js/bundle.js'], ['js'])
 });
 
 gulp.task('bundle', () => {
   let b = browserify({
-    entries : ['./app/main.js'],
+    entries : ['./main.js'],
     cache : {},
     packagecache : {},
     plugin: watchify
@@ -80,10 +80,10 @@ gulp.task('bundle', () => {
 });
 
 gulp.task('sass', () => {
-  return gulp.src('./app/**/*.scss')
+  return gulp.src('./**/*.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer(autoprefixerOptions))
-  .pipe(concat('main.css'))
+  .pipe(concat('style.css'))
   .pipe(gulp.dest('./dist/css/'))
 });
 
