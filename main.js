@@ -10,7 +10,7 @@ sr.reveal('.portfolio-box', {duration: 2000}, 500);
 // Smooth Scroll on href clicks
 
 $(document).ready(function(){
-    $('a[href^="#"]').on('click', function(event) {
+    $('a[href^="#1"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
         event.preventDefault();
@@ -41,4 +41,16 @@ $(document).ready(function(){
 
 $(function () {
   $('[data-toggle="popover"]').popover( { trigger: 'hover' } )
-})
+});
+
+// button opening new windows for projects
+
+
+    $(function () {
+        $(".btn-outline-danger").on('click', function(e) {
+          var open = "http://" + this.value;
+          window.open(open);
+
+        })
+    })
+

@@ -312,19 +312,31 @@ a.borderYtoX:hover:before, a.borderYtoX:hover:after
 /*--------------------------------------------------------------------------------------------------------
                                                 Portfolio Boxes
 --------------------------------------------------------------------------------------------------------*/
+#box2, #box6 {
+    background-color: #929292;
+}
+
+#box1, #box5 {
+    background-color: #999999;
+}
+
+#box3, #box4 {
+    background-color: #ababab;
+}
 
 .portfolio-box {
 
     position:relative;
     display:block;
     margin:auto;
-    background-color: black;
 }
 
-img {
-    padding: 5%;
-    -webkit-filter: drop-shadow(2px 2px 0 white);
-    filter:drop-shadow(2px 2px 0 white); 
+.portfolio-box img {
+    padding: 15%;
+    -webkit-filter: drop-shadow(2px 2px 0 black);
+    filter:drop-shadow(2px 2px 0 black); 
+    height: 60%;
+    width: 60%;
 }
 
 
@@ -341,6 +353,8 @@ img {
     height:100%;
     transition:all .35s
 }
+
+
 
 
 .btn-default.active,.btn-default:active,.btn-primary.active,.btn-primary:active,.open>.dropdown-toggle.btn-default,.open>.dropdown-toggle.btn-primary {
@@ -391,6 +405,17 @@ img {
     outline:0
 }
 
+@media (max-width:768px) {
+    #box3, #box6 {
+        background-color: #929292;
+    }
+
+    #box4 {
+        background-color: #999999;
+
+    }
+
+}
 
 @media (min-width:768px) {
 
