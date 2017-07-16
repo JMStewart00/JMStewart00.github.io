@@ -417,6 +417,15 @@ a.borderYtoX:hover:before, a.borderYtoX:hover:after
 
 }
 
+@media (max-width: 500px) {
+
+     .borderYtoX {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+    }
+}
+
+
 @media (min-width:768px) {
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
