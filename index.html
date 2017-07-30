@@ -265,10 +265,6 @@
             </div>
         </div>
     </section>
-				<div class="container-fluid h-50" id="maincontent">
-					
-					<!-- <span id="contact"></span> -->
-				</div>
 <!------------------------------------------------------------------------
                   Contact Section
 ------------------------------------------------------------------------>
@@ -281,26 +277,41 @@
 			                    <hr class="primary">
 			                    <p>Please feel free to contact me via the email below or on any of my social media platforms!</p>
 			                </div>
-			                <div class="col text-center">
-			                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-			                    <p><a href="mailto:jmstewart00@gmail.com">JMStewart00@gmail.com</a></p>
-			                </div>
 			            </div>
 					<div class="row w-100 mx-auto" id="iconRow">
 						<div class="col mx-auto text-center">
-							<a href="https://github.com/JMStewart00" target="_blank"><i class="img-fluid hvr-icon-grow fa fa-github-square fa-5x" aria-hidden="true"></i></a>
+						</div>
+						<div class="col mx-auto text-center">
+							<div class="col text-center" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Github">
+								<a href="https://github.com/JMStewart00" target="_blank"><i class="img-fluid hvr-icon-grow fa fa-github-square fa-5x" aria-hidden="true"></i></a>
+							</div>
 						</div>
 						<div class="col mx-auto text-center hidden-sm-down">
+							<div class="col text-center" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Blog">
 							<a href="https://jmstewart00.github.io/stewartblog/" target="_blank"><i class="img-fluid hvr-icon-grow fa fa-rss-square fa-5x" aria-hidden="true"></i></a>
+							</div>
 						</div>
 						<div class="col mx-auto text-center">
+							<div class="col text-center" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Email Me!">
+		                    <a href="mailto:jmstewart00@gmail.com"><i class="fa fa-envelope-square fa-5x sr-contact mb-3 img-fluid hvr-icon-grow"></i></a>
+		                    </div>
+		                </div>
+						<div class="col mx-auto text-center">
+							<div class="col text-center" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Twitter">
 							<a href="https://twitter.com/CoachStewart7" target="_blank"><i class="img-fluid hvr-icon-grow fa fa-twitter-square fa-5x" aria-hidden="true"></i></a>
+							</div>
 						</div>
 						<div class="col mx-auto text-center hidden-sm-down">
+							<div class="col text-center" data-container="body" data-toggle="popover" data-placement="bottom" data-content="LinkedIn">
 							<a href="https://www.linkedin.com/in/josh-stewart/" target="_blank"><i class="img-fluid hvr-icon-grow fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+							</div>
 						</div>
 						<div class="col mx-auto text-center">
+							<div class="col text-center" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Facebook">
 							<a href="https://www.facebook.com/jmstew" target="_blank"><i class="img-fluid hvr-icon-grow fa fa-facebook-square fa-5x" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="col mx-auto text-center">
 						</div>
 					</div>
 			        </div>
@@ -393,9 +404,12 @@
                             <p>We moved quickly from JavaScript and AngularJS to another language in <strong>PHP</strong> and that included a framework in <strong>Laravel</strong>.</p>
                             <p>While there were plenty of smaller plain PHP projects that I did it was fun to break off, build this app in plain PHP and then rebuild it with the tag-team options of a co-worker. This version of the app that you see combines <strong>Laravel with PHP and Bootstrap 4 as well as JQuery and Javascript.</strong></p>
                             <p>It was extremely fun to see this project unfold and while it isn't completely done to where I wanted it to be I really like it.</p>
-							<button type="button" class="btn btn-outline-danger" value="github.com/JMStewart00/time-laravel">Check out the code for the Laravel Project!</button>
+							<button type="button" class="btn btn-outline-primary mb-3" value="taskr-.herokuapp.com">Check out the project on Heroku!</button>
 							<br />
-							<button type="button" class="btn btn-outline-danger" value="github.com/JMStewart00/time-keeping-app">Check out the code for the plain PHP Project!</button>
+							<sub>NOTE: Upon deployment to Heroku there were some things that became buggy. The majority of the features I worked on are present, but some have stopped working (i.e. adding clients and the calculations for the duration of tasks).</sub>
+							<button type="button" class="btn btn-outline-danger my-3" value="github.com/JMStewart00/time-laravel">Check out the code for the Laravel Project!</button>
+							<br />
+							<button type="button" class="btn btn-outline-danger mb-3" value="github.com/JMStewart00/time-keeping-app">Check out the code for the plain PHP Project!</button>
 
                         </div>
                     </div>

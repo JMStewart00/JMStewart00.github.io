@@ -24,7 +24,7 @@ const autoprefixerOptions = {
 
 gulp.task('connect', () => {
   connect.server({
-    root: '/',
+    root: './',
       livereload: true
   });
 
