@@ -57,7 +57,7 @@ h2 {
 --------------------------------------------------------------------------------------------------------*/
 
 #maincontent {
-    background-image: url(computer.jpg);
+    background-image: url(./dist/images/computer.jpg);
     background-image-opacity: .5; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -78,7 +78,7 @@ h2 {
 
 #secondBG {
 
-    background-image: url(computer.jpg);
+    background-image: url(dist/images/computer.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -326,6 +326,24 @@ a.borderYtoX:hover:before, a.borderYtoX:hover:after
 
 #box3, #box4 {
     background-color: #ababab;
+}
+
+.gray-bg {
+    background-color: #cccccc;
+}
+
+.gray-bg a {
+    text-decoration: none;
+    color: black;
+}
+
+.gray-bg a:hover {
+    text-decoration: none;
+    color: #f04;
+}
+
+.gray-bg .fa {
+    color: #f04;
 }
 
 .portfolio-box {
